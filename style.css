@@ -6,6 +6,10 @@
 
 body {
     background-color: #eef9bf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -22,8 +26,11 @@ h1 {
 }
 .boxcards{
     margin-top: 47px;
+    width: 890px;
     display: grid;
-    grid-template-columns: repeat(7, minmax(0, 2fr));
+    
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     gap: 20px;
 }
 
