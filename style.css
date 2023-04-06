@@ -64,10 +64,10 @@ h1 {
     transform: rotateY(180deg);
   }
 
-  .card:hover .back-face {
+  .back {
     transform: rotateY(0deg);
   }
 
-  .card:hover .front-face {
+  .front {
     transform: rotateY(-180deg);
   }
