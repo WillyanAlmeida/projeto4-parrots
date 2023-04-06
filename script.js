@@ -1,17 +1,17 @@
-const cards = ["<div class='card' onclick='selecionarcard(this)'><img id='1' class='back-face face' src='/img/bobrossparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='1' class='back-face face' src='/img/bobrossparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='2' class='back-face face' src='/img/explodyparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='2' class='back-face face' src='/img/explodyparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='3' class='back-face face' src='/img/fiestaparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='3' class='back-face face' src='/img/fiestaparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='4' class='back-face face' src='/img/metalparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='4' class='back-face face' src='/img/metalparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='5' class='back-face face' src='/img/revertitparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='5' class='back-face face' src='/img/revertitparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='6' class='back-face face' src='/img/tripletsparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='6' class='back-face face' src='/img/tripletsparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='7' class='back-face face' src='/img/unicornparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>",
-    "<div class='card' onclick='selecionarcard(this)'><img id='7' class='back-face face' src='/img/unicornparrot.gif' alt=''><img class='front-face face' src='/img/back.png' alt=''></div>"]
+const cards = ["<div class='card' onclick='selecionarcard(this)'><img id='1' class='back-face face' src='./img/bobrossparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='1' class='back-face face' src='./img/bobrossparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='2' class='back-face face' src='./img/explodyparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='2' class='back-face face' src='./img/explodyparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='3' class='back-face face' src='./img/fiestaparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='3' class='back-face face' src='./img/fiestaparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='4' class='back-face face' src='./img/metalparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='4' class='back-face face' src='./img/metalparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='5' class='back-face face' src='./img/revertitparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='5' class='back-face face' src='./img/revertitparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='6' class='back-face face' src='./img/tripletsparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='6' class='back-face face' src='./img/tripletsparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='7' class='back-face face' src='./img/unicornparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>",
+    "<div class='card' onclick='selecionarcard(this)'><img id='7' class='back-face face' src='./img/unicornparrot.gif' alt=''><img class='front-face face' src='./img/back.png' alt=''></div>"]
 //usuario digita quantidade de cartas seguindo criterio descrito no prompt
 let qtdcartas = 1;
 while ((qtdcartas % 2) !== 0 || qtdcartas < 4 || qtdcartas > 14) {
@@ -40,9 +40,9 @@ for (i = 0; i < randompositions.length; i++) {
 }
 let contclick = 0;
 let x1 = 0;
-let c1f, c1b, c2f, c2b;
-let c1id;
-let c2id;
+let c1f, c1b, c2f, c2b, c1id, c2id;
+
+
 function selecionarcard(cardselector) {
 
     if (x1 < 2) {
@@ -55,23 +55,21 @@ function selecionarcard(cardselector) {
             c1id = vers.id;
             c1f = frente;
             c1b = vers;
+            
         }
         if (x1 === 1) {
             c2id = vers.id;
             c2f = frente;
             c2b = vers;
+            
         }
 
 
-        console.log(c1f);
-        console.log(c1b);
-        console.log(c2f);
-        console.log(c2b);
-        console.log(c1id);
-        console.log(c2id);
+       
         x1++;
         if (c1id === c2id) {
             x1 = 0;
+            contclick +=2;
 
 
         }
@@ -90,6 +88,7 @@ function selecionarcard(cardselector) {
         x1 = 0;
         c1id = null;
         c2id = null;
+        contclick +=2;
 
 
     }
