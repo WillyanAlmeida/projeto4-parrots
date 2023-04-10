@@ -40,7 +40,7 @@ for (i = 0; i < randompositions.length; i++) {
 
 }
 let contclick = 0;
-let match=0;
+let match = 0;
 let x1 = 0;
 let c1f, c1b, c2f, c2b, c1id, c2id;
 
@@ -48,61 +48,62 @@ let c1f, c1b, c2f, c2b, c1id, c2id;
 function selecionarcard(cardselector) {
 
     if (x1 < 2) {
-        const frente = cardselector.querySelector('.front-face');
-        frente.classList.toggle('front');
+        const selectconf = cardselector.querySelector('.front');
+        console.log(selectconf);
 
-        const vers = cardselector.querySelector('.back-face');
-        vers.classList.toggle('back');
-        if (x1 === 0) {
-            c1id = vers.id;
-            c1f = frente;
-            c1b = vers;
-            
-        }
-        if (x1 === 1) {
-            c2id = vers.id;
-            c2f = frente;
-            c2b = vers;
-            
-        }
+        if (selectconf === null) {
+            const frente = cardselector.querySelector('.front-face');
+            frente.classList.add('front');
 
+            const vers = cardselector.querySelector('.back-face');
+            vers.classList.add('back');
+            if (x1 === 0) {
+                c1id = vers.id;
+                c1f = frente;
+                c1b = vers;
 
-       
-        x1++;
-        if (c1id === c2id) {
-            x1 = 0;
-            contclick +=2;
-            match+=2;
-            if(match===qtdcartas1){
-                setTimeout(mens, 1000);
             }
+            if (x1 === 1) {
+                c2id = vers.id;
+                c2f = frente;
+                c2b = vers;
 
-
+            }
+            console.log(cardselector);
+            x1++;
+            if (c1id === c2id) {
+                x1 = 0;
+                contclick += 2;
+                match += 2;
+                if (match === qtdcartas1) {
+                    setTimeout(mens, 1000);
+                }
+            }
+        }
+        if (x1 === 2 && c1id != c2id) {
+            setTimeout(nomatch, 1000);
+            x1++;
         }
     }
-    if (x1 === 2 && c1id != c2id) {
-        setTimeout(nomatch, 1000);
-        x1++;
 
-    }
-
-    function nomatch() {
-        c1f.classList.toggle('front');
-        c1b.classList.toggle('back');
-        c2f.classList.toggle('front');
-        c2b.classList.toggle('back');
-        x1 = 0;
-        c1id = null;
-        c2id = null;
-        contclick +=2;
+    
+}
+function nomatch() {
+    c1f.classList.toggle('front');
+    c1b.classList.toggle('back');
+    c2f.classList.toggle('front');
+    c2b.classList.toggle('back');
+    x1 = 0;
+    c1id = null;
+    c2id = null;
+    contclick += 2;
 
 
-    }
 }
 
 
 
-function mens(){
-    alert('Você ganhou em '+contclick+ 'jogadas!');
+function mens() {
+    alert('Você ganhou em ' + contclick + 'jogadas!');
 
 }
