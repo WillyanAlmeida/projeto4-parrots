@@ -49,8 +49,7 @@ function selecionarcard(cardselector) {
 
     if (x1 < 2) {
         const selectconf = cardselector.querySelector('.front');
-        console.log(selectconf);
-
+        
         if (selectconf === null) {
             const frente = cardselector.querySelector('.front-face');
             frente.classList.add('front');
@@ -69,7 +68,7 @@ function selecionarcard(cardselector) {
                 c2b = vers;
 
             }
-            console.log(cardselector);
+            
             x1++;
             if (c1id === c2id) {
                 x1 = 0;
@@ -97,11 +96,7 @@ function nomatch() {
     c1id = null;
     c2id = null;
     contclick += 2;
-
-
 }
-
-
 
 function mens() {
     alert('Você ganhou em ' + contclick + 'jogadas!');
