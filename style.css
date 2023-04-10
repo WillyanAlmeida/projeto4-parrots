@@ -15,6 +15,7 @@ body {
 header {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding-top: 40px;
 }
 
@@ -26,11 +27,11 @@ h1 {
 }
 .boxcards{
     margin-top: 47px;
-    width: 890px;
-    display: grid;
-    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-template-columns: repeat(7, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -70,4 +71,17 @@ h1 {
 
   .front {
     transform: rotateY(-180deg);
+  }
+  @media (max-width:600px)  { 
+    .boxcards{
+        margin-top: 47px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+                gap: 20px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    
   }
